@@ -1,0 +1,15 @@
+<nav class="level is-mobile">
+    <div class="level-left">
+        <time class="level-item" datetime="{{>datetime3399.html}}">{{>date.html}}</time>
+    </div>
+    {{#taxonomies}}
+    <div class="level-right">
+        <div class="level-item tags">{{#categories}}
+            <a class="tag is-success" href="{{#site}}{{url}}{{/site}}/categories/{{name}}/index.html">{{name}}</a>
+            {{/categories}}{{#tags}}
+            <a href="{{#site}}{{url}}{{/site}}/tags/{{name}}/index.html" class="tag is-warning">{{name}}</a>
+            {{/tags}}
+        </div>
+    </div>
+    {{/taxonomies}}
+</nav>

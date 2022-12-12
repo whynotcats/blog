@@ -1,0 +1,25 @@
+{{>default_head.html}}
+<article class="post">
+  <section class="hero is-medium is-bold">
+    <div class="hero-body" style="background-image: url({{image}})">
+      <div class="container has-text-centered-mobile has-text-centered-tablet has-text-left-desktop">
+        <p class="title has-text-white">{{title}}</p>
+      </div>
+    </div>
+  </section>
+  <section class="section has-text-dark">
+    {{>post_meta.html}}
+  </section>
+  <section class="container">
+    <div class="content">{{content}}
+  </section>
+  </div>
+</article>
+{{#pagination}}
+<nav class="pagination">
+  {{#previous}}<a class="pagination-previous" href="{{permalink}}">← Previous:
+    <strong>{{title}}</strong></a>{{/previous}}
+  {{#next}}<a class="pagination-next" href="{{permalink}}">Next: <strong>{{title}}</strong> →</a>{{/next}}
+</nav>
+{{/pagination}}
+{{>foot.html}}

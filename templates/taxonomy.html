@@ -1,0 +1,10 @@
+{{>tax_head.html}}
+<div class="contianer block">
+    <p class="title is-4">{{title}}</p>
+    <div class="container tags">
+        {{#keys}}
+        <div class="tag is-warning"><a href="{{#site}}{{url}}{{/site}}/{{slug}}/{{key}}/index.html">{{key}}</a></div>
+        {{/keys}}
+    </div>
+</div>
+{{>foot.html}}

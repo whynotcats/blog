@@ -1,0 +1,8 @@
+<nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+        <li><a class="breadcrumb" href="{{#site}}{{url}}{{/site}}/index.html">{{#site}}home{{/site}}</a></li>
+        {{#taxonomy}}<li><a href="{{#site}}{{url}}{{/site}}/{{slug}}/index.html">{{slug}}</a></li>{{/taxonomy}}
+        {{#slug}}<li class="is-active"><a href="#">{{slug}}</a></li>{{/slug}}
+        {{^slug}}<li class="is-active"><a href="#">{{title}}</a></li>{{/slug}}
+    </ul>
+</nav>

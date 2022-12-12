@@ -1,0 +1,12 @@
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>{{#site}}{{#author}}{{author}}{{/author}}{{/site}}{{#date}} © {{y}}{{/date}}{{^date}} © 2022{{/date}}</p>
+    {{#site}}
+    {{#atom}}<a href="/atom.xml">Atom</a>{{/atom}}
+    {{#rss}}<a href="/rss.xml">Rss</a>{{/rss}}
+    {{/site}}
+  </div>
+</footer>
+</body>
+
+</html>

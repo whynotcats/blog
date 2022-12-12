@@ -1,0 +1,56 @@
+{{>default_head.html}}
+{{#summary}}
+<section class="hero is-medium is-bold">
+	<div class="hero-body has-background-cat-pet">
+		<div class="container has-text-centered-mobile has-text-centered-tablet has-text-left-desktop">
+			<p class="title has-text-white">{{summary}}</p>
+		</div>
+	</div>
+</section>
+{{/summary}}
+<div class="block">
+	<section class="pt-4 container">
+		<div class="tile is-ancestor">
+			{{#pages}}
+			<div class="tile is-parent">
+				<article class="card tile is-child">
+					<a href="{{permalink}}">
+						<div class="card-image">
+							<figure class="image is-4by3">
+								<img src="{{image}}" alt="{{image_alt}}" />
+							</figure>
+						</div>
+					</a>
+					<div class="card-content">
+						<p class="title is-4"><a href="{{permalink}}">{{title}}</a></p>
+						{{>post_meta.html}}
+						<a href="{{permalink}}" class="content ">
+							<p>{{summary}}</p>
+							<br>
+							<time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+						</a>
+					</div>
+				</article>
+			</div>
+			{{/pages}}
+		</div>
+	</section>
+</div>
+{{#pagination}}
+<nav class="pagination is-centered" role="pagination" aria-label="pagination">
+	{{#previous}}
+	<a class="pagination-previous"
+		href="{{#site}}{{url}}{{/site}}{{path}}{{#slug}}/{{slug}}{{/slug}}/{{previous}}.html">← Newer
+		Posts</a>
+	{{/previous}}
+	{{#next}}
+	<a class="pagination-next" href="{{#site}}{{url}}{{/site}}{{path}}{{#slug}}/{{slug}}{{/slug}}/{{next}}.html">Older
+		Posts
+		→</a>
+	{{/next}}
+	<ul class="pagination-list has-text-black">
+		<li>page {{current}} of {{length}}</li>
+	</ul>
+</nav>
+{{/pagination}}
+{{>foot.html}}
