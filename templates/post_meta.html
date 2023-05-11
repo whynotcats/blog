@@ -1,10 +1,19 @@
-<nav class="level is-mobile">
-    <div class="level-left">
+<nav class="level">
+    <div class="level-left block">
         <time class="level-item" datetime="{{>datetime3399.html}}">{{>date.html}}</time>
+    </div>
+    <div class="level-item tags has-addons">
+        {{#source_code}}
+        <a class="tag" href="{{source_code}}">View Source</a>
+        {{/source_code}}
+        {{#view_site}}
+        <a class="tag is-primary" href="{{view_site}}">View
+            {{#project_name}}{{project_name}}{{/project_name}}{{^project_name}}Site{{/project_name}}</a>
+        {{/view_site}}
     </div>
     {{#taxonomies}}
     <div class="level-right">
-        <div class="level-item tags">{{#categories}}
+        <div class="level-item tags mb-4">{{#categories}}
             <a class="tag is-success" href="{{#site}}{{url}}{{/site}}/categories/{{name}}/index.html">{{name}}</a>
             {{/categories}}{{#tags}}
             <a href="{{#site}}{{url}}{{/site}}/tags/{{name}}/index.html" class="tag is-warning">{{name}}</a>

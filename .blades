@@ -1,7 +1,8 @@
-public\tags\rust\index.html
-public\tags\index.html
-public\tags\elasticsearch\index.html
-public\tags\bulma\index.html
-public\tags\terraform\index.html
-public\index.html
-public\rust-wasm-yew-app-astro-cal.html
+..\dist\blog\tags\index.html
+..\dist\blog\index.html
+..\dist\blog\tags\yew\index.html
+..\dist\blog\rust-extending-enums-of-library.html
+..\dist\blog\rust-wasm-yew-app-astro-cal.html
+..\dist\blog\tags\elasticsearch\index.html
+..\dist\blog\tags\rust\index.html
+..\dist\blog\tags\bulma\index.html

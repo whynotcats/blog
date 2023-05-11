@@ -1,7 +1,7 @@
 {{>default_head.html}}
 {{#summary}}
 <section class="hero is-medium is-bold">
-	<div class="hero-body has-background-cat-pet">
+    <div class="hero-body has-background-cat-pet" style="background-image: url('{{header_image}}')">
 		<div class="container has-text-centered-mobile has-text-centered-tablet has-text-left-desktop">
 			<p class="title has-text-white">{{summary}}</p>
 		</div>
@@ -26,8 +26,6 @@
 						{{>post_meta.html}}
 						<a href="{{permalink}}" class="content ">
 							<p>{{summary}}</p>
-							<br>
-							<time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
 						</a>
 					</div>
 				</article>

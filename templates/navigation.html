@@ -1,63 +1,92 @@
-<nav class="navbar is-sticky-top navigation has-background-primary" role="navigation" aria-label="main navigation">
+<nav class="navbar is-sticky-top navigation" role="navigation" aria-label="main navigation">
     <div class="container is-mobile">
         <div class="navbar-brand">
-            <a class="navbar-item" href="/">
-                <span class="icon-text has-text-white p-2">
+            <a class="navbar-item" href="https://whynotcats.com">
+                <span class="icon-text is-hidden-touch has-background-primary has-text-white p-2">
                     <span class="icon">
                         {{>solid_cat_svg.html}}
                     </span>
                     <span>Why Not Cats?</span>
                 </span>
+                <span class="icon is-hidden-desktop is-medium has-border-radius-4 has-background-primary has-text-white p-2">
+                    {{>solid_cat_svg.html}}
+                </span>
             </a>
-            <a class="navbar-item is-active has-text-dark" href="https://blog.whynotcats.com">
-                <span class="icon-text">
+            <a class="navbar-item has-text-dark" href="https://blog.whynotcats.com">
+                <span class="icon-text is-hidden-touch">
                     <span class="icon">
                         {{>journal_bookmark_fill_svg.html}}
                     </span>
-                    <span>Blog</span>
+                    <span>Home</span>
+                </span>
+                <span class="icon is-hidden-desktop">
+                    {{>journal_bookmark_fill_svg.html}}
                 </span>
             </a>
-            <a href="https://github.com/whynotcats" class="navbar-item is-hidden-touch has-text-white">
-                <span class="icon-text">
-                    <span class="icon">
-                        {{>github_svg.html}}
-                    </span>
-                    <span>Github</span>
-                </span>
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu"
+                aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
             </a>
-            <div class="navbar-item is-hidden-desktop is-justify-content-end is-flex-grow-1">
-                <a href="https://github.com/whynotcats" class="navbar-item has-text-white">
-                    <span class="icon-text is-hidden-touch">
+        </div>
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-start is-hidden-desktop">
+                <a href="https://github.com/whynotcats" class="navbar-item">
+                    <span class="icon-text">
                         <span class="icon">
                             {{>github_svg.html}}
                         </span>
                         <span>Github</span>
                     </span>
-                    <span class="icon is-hidden-dekstop">
-                        {{>github_svg.html}}
+                </a>
+                <a target="_blank" rel="me" href="https://hachyderm.io/@whynotcats" class="navbar-item">
+                    <span class="icon">
+                        {{>mastodon_svg.html}}
+                    </span>
+                    <span>Mastodon</span>
+                </a>
+                <a target="_blank" href="https://twitter.com/whynotcats" class="navbar-item">
+                    <span class="icon-text">
+                        <span class="icon">
+                            {{>twitter_svg.html}}
+                        </span>
+                        <span>Twitter</span>
                     </span>
                 </a>
-                <a target="_blank" href="https://twitter.com/whynotcats" class="navbar-item has-text-white">
-                    <span class="icon">
-                        {{>twitter_svg.html}}
-                    </span>
-                </a>
-                <a target="_blank" href="https://glass.photo/whynotcats" class="navbar-item has-text-white">
-                    <span class="icon">
-                        {{>camera_fill_svg.html}}
+                <a target="_blank" href="https://glass.photo/whynotcats" class="navbar-item">
+                    <span class="icon-text">
+                        <span class="icon">
+                            {{>camera_fill_svg.html}}
+                        </span>
+                        <span>Glass</span>
                     </span>
                 </a>
             </div>
         </div>
-        <div class="navbar-end">
-            <a target="_blank" href="https://twitter.com/whynotcats" class="navbar-item is-hidden-touch has-text-white">
+
+        <div class="navbar-end is-hidden-touch">
+            <a target="_blank" rel="me" href="https://hachyderm.io/@whynotcats"
+                class="navbar-item is-hidden-touch">
+                <span class="icon">
+                    {{>mastodon_svg.html}}
+                </span>
+            </a>
+            <a target="_blank" href="https://twitter.com/whynotcats" class="navbar-item">
                 <span class="icon">
                     {{>twitter_svg.html}}
                 </span>
             </a>
-            <a target="_blank" href="https://glass.photo/whynotcats" class="navbar-item is-hidden-touch has-text-white">
+            <a target="_blank" href="https://glass.photo/whynotcats" class="navbar-item">
                 <span class="icon">
                     {{>camera_fill_svg.html}}
+                </span>
+            </a>
+            <a href="https://github.com/whynotcats" class="navbar-item">
+                <span class="icon-text">
+                    <span class="icon">
+                        {{>github_svg.html}}
+                    </span>
                 </span>
             </a>
         </div>
